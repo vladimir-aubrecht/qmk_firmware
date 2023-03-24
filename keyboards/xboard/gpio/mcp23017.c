@@ -1,5 +1,7 @@
+#include QMK_KEYBOARD_H
 #include "mcp23017.h"
 #include "i2c_master.h"
+
 
 void mcp23017_init(uint8_t expander_address, uint8_t bank_A_direction, uint8_t bank_B_direction)
 {

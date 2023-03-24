@@ -3,7 +3,7 @@
 #include <stdint.h>
 
 #define I2C_TIMEOUT 200
-#define MCP23017_ADDR 0x20
+#define MCP23017_ADDR (0x20 << 1)
 
 enum MCP23017_REG_BANK0 {
     MCP23017_REG_IODIRA = 0,
