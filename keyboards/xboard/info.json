@@ -10,7 +10,12 @@
         "console": true,
         "extrakey": true,
         "mousekey": true,
-        "nkro": true
+        "nkro": true,
+        "bluetooth": false,
+        "rgb_matrix": true
+    },
+    "bluetooth": {
+        "driver": "BluefruitLE"
     },
     "matrix_pins": {
         "cols": ["C2", "C2", "C2", "C2", "C2", "C2", "C2", "C2", "C2", "C2", "C2", "C2", "C2", "C2", "C2", "C2", "C2"],
@@ -22,6 +27,9 @@
         "device_version": "1.0.0",
         "pid": "0x0000",
         "vid": "0xFEED"
+    },
+    "rgb_matrix": {
+        "driver": "IS31FL3743A"
     },
     "layouts": {
         "LAYOUT_tkl_ansi": {

@@ -6,6 +6,15 @@
 #define MATRIX_ROWS 6 
 #define MATRIX_COLS 17
 
+#define DRIVER_COUNT 1
+
+#define LED_DRIVER_ADDR_1 0b00101001
+//#define LED_DRIVER_ADDR_2 0b00111001
+#define RGB_MATRIX_LED_COUNT 3
+#define RGB_MATRIX_DEFAULT_MODE RGB_MATRIX_SOLID_COLOR
+
+//"split_count": [48, 39]
+
 #define LAYOUT_tkl_ansi( \
     K00,      K02, K03, K04, K05,   K06, K07, K08, K09,   K0A, K0B, K0C, K0D,  K0E, K0F, K0G, \
     K10, K11, K12, K13, K14, K15, K16, K17, K18, K19, K1A, K1B, K1C,    K1D,   K1E, K1F, K1G, \
