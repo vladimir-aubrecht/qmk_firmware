@@ -1,4 +1,4 @@
-#include QMK_KEYBOARD_H
+#include "quantum.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*
@@ -31,7 +31,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 led_config_t g_led_config = { {
   // Key Matrix to LED Index
   {   0, NO_LED, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 },
-  
+
   {   0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 },
   {   0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 },
   {   0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, NO_LED, 12 },
@@ -66,7 +66,7 @@ const is31_led __flash g_is31_leds[RGB_MATRIX_LED_COUNT] = {
     {0,  CS6_SW7,  CS5_SW7,  CS4_SW7},
     {0,  CS6_SW8,  CS5_SW8,  CS4_SW8},
     // {0,  CS6_SW9,  CS5_SW9,  CS4_SW9},
-    
+
     // {0,  CS9_SW1,  CS8_SW1,  CS7_SW1},
     // {0,  CS9_SW2,  CS8_SW2,  CS7_SW2},
     // {0,  CS9_SW3,  CS8_SW3,  CS7_SW3},
@@ -76,7 +76,7 @@ const is31_led __flash g_is31_leds[RGB_MATRIX_LED_COUNT] = {
     // {0,  CS9_SW7,  CS8_SW7,  CS7_SW7},
     // {0,  CS9_SW8,  CS8_SW8,  CS7_SW8},
     // {0,  CS9_SW9,  CS8_SW9,  CS7_SW9},
-    
+
     // {0,  CS12_SW1,  CS11_SW1,  CS10_SW1},
     // {0,  CS12_SW2,  CS11_SW2,  CS10_SW2},
     // {0,  CS12_SW3,  CS11_SW3,  CS10_SW3},
@@ -108,7 +108,7 @@ const is31_led __flash g_is31_leds[RGB_MATRIX_LED_COUNT] = {
     // {0,  CS18_SW9,  CS17_SW9,  CS16_SW9},
 
 
-	
+
     // {1,  CS3_SW1,  CS2_SW1,  CS1_SW1},
     // {1,  CS3_SW2,  CS2_SW2,  CS1_SW2},
     // {1,  CS3_SW3,  CS2_SW3,  CS1_SW3},
@@ -126,7 +126,7 @@ const is31_led __flash g_is31_leds[RGB_MATRIX_LED_COUNT] = {
     // {1,  CS6_SW6,  CS5_SW6,  CS4_SW6},
     // {1,  CS6_SW7,  CS5_SW7,  CS4_SW7},
     // {1,  CS6_SW8,  CS5_SW8,  CS4_SW8},
-    
+
     // {1,  CS9_SW1,  CS8_SW1,  CS7_SW1},
     // {1,  CS9_SW2,  CS8_SW2,  CS7_SW2},
     // {1,  CS9_SW3,  CS8_SW3,  CS7_SW3},
@@ -135,7 +135,7 @@ const is31_led __flash g_is31_leds[RGB_MATRIX_LED_COUNT] = {
     // {1,  CS9_SW6,  CS8_SW6,  CS7_SW6},
     // {1,  CS9_SW7,  CS8_SW7,  CS7_SW7},
     // {1,  CS9_SW8,  CS8_SW8,  CS7_SW8},
-    
+
     // {1,  CS12_SW1,  CS11_SW1,  CS10_SW1},
     // {1,  CS12_SW2,  CS11_SW2,  CS10_SW2},
     // {1,  CS12_SW3,  CS11_SW3,  CS10_SW3},
