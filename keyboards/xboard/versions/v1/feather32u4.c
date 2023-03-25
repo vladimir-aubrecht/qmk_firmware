@@ -52,7 +52,7 @@ void unselect_row(uint8_t row) {
 
 uint32_t read_row(void) {
     uint32_t banks = 0;
-    
+
     uint8_t mcp0b_gpio = 0;
     uint8_t mcp1a_gpio = 0;
     uint8_t mcp1b_gpio = 0;
@@ -63,6 +63,8 @@ uint32_t read_row(void) {
     banks |= ((uint32_t)reverse_byte(mcp1b_gpio) << 16);
     banks |= ((uint16_t)reverse_byte(mcp1a_gpio) << 8);
     banks |= reverse_byte(mcp0b_gpio);
+
+    dprintf("%d\n", banks);
 
     return banks;
 }
@@ -93,5 +95,5 @@ void keyboard_post_init_user(void) {
 }
 
 void matrix_scan_user(void) {
-    //matrix_print();
+//    matrix_print();
 }

@@ -9,7 +9,7 @@
         "command": false,
         "console": true,
         "extrakey": true,
-        "mousekey": true,
+        "mousekey": false,
         "nkro": true,
         "bluetooth": false,
         "rgb_matrix": true
