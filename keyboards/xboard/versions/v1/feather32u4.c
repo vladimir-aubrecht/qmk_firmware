@@ -84,9 +84,9 @@ void matrix_read_cols_on_row(matrix_row_t current_matrix[], uint8_t current_row)
 }
 
 void keyboard_post_init_user(void) {
-    debug_enable=true;
-    debug_matrix=true;
-    debug_keyboard=true;
+    // debug_enable=true;
+    // debug_matrix=true;
+    // debug_keyboard=true;
 
     mcp23017_init(MCP23017_ADDR, MCP23017_BANK_OUTPUT, MCP23017_BANK_INPUT);
     mcp23017_init(MCP23017_ADDR + 0xE, MCP23017_BANK_INPUT, MCP23017_BANK_INPUT);

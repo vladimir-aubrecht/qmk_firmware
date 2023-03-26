@@ -10,7 +10,7 @@
         "console": true,
         "extrakey": true,
         "mousekey": false,
-        "nkro": true,
+        "nkro": false,
         "bluetooth": false,
         "rgb_matrix": true
     },
@@ -30,6 +30,9 @@
     },
     "rgb_matrix": {
         "driver": "IS31FL3743A"
+    },
+    "build": {
+        "lto": true
     },
     "layouts": {
         "LAYOUT_tkl_ansi": {
