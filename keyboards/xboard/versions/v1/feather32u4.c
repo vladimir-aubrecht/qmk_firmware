@@ -64,8 +64,6 @@ uint32_t read_row(void) {
     banks |= ((uint16_t)reverse_byte(mcp1a_gpio) << 8);
     banks |= reverse_byte(mcp0b_gpio);
 
-    dprintf("%d\n", banks);
-
     return banks;
 }
 
